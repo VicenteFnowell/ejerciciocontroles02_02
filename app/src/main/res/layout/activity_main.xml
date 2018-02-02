@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ejerciciocontroles02_02.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/senalesautoescuela"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tvtipotest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipotest" />
+
+    <Spinner
+        android:id="@+id/sptipotest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botontipotest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clicktipotest"
+            android:text="@string/btntest" />
+
+        <Button
+            android:id="@+id/botonenviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="clickEnviarRespuesta"
+            android:text="@string/btnrespuesta" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:text="@string/tvpregunta" />
+
+    <RadioGroup
+        android:id="@+id/rgrespuestas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbrespuesta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A 90km/h" />
+
+        <RadioButton
+            android:id="@+id/rbrespuesta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A 120km/h" />
+
+        <RadioButton
+            android:id="@+id/rbrespuesta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No hay límite de velocidad" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cbvalidar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/validapregunta" />
+    </RelativeLayout>
+
+</LinearLayout>

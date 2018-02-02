@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ejerciciocontroles02_02</string>
+    <string name="validapregunta">Esta pregunta está repetida</string>
+    <string name="tipotest">Tipo de Test</string>
+    <string name="btntest">Tipo Test</string>
+    <string name="btnrespuesta">Enviar Respuesta</string>
+    <string name="tvpregunta">¿A cuantos km/h podemos circular por una autovía?</string>
+
+</resources>
